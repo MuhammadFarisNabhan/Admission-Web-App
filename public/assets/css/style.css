@@ -1,0 +1,146 @@
+table{
+    width: 1900px;
+}
+:is(.row .card-body table) :where(th){
+    background-color: #5b73e8;
+    color: white;
+    text-shadow: 2px 1px black;
+    position: relative;
+    text-align: center;
+}
+:is(.row .card-body table) :where(td){
+    height: 20px;
+}
+:is(.table-responsive) .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:8%;
+}
+.grid-container .grid-items a,
+.grid-container .grid-items button{
+    padding: 0;
+    box-shadow: 3px 2px 8px rgb(132, 132, 132);
+}
+.dropdown button span .lines{
+    position:absolute;
+    top: 20px;
+    left: 105px;
+    background-color: white;
+    width: 2px;
+    height: 46px;
+    gap: 5px;
+    color: black;
+    content: "";
+}
+:is(.dropdown button span) > hr {
+    height: 5px;
+    color: black;
+}
+@media screen and (max-width:900px ){
+div.lines{
+        display: none;
+    }
+}
+.navbar-brand-box a span img{
+    width: 140px;
+    height: auto;
+}
+@media screen and (max-width:900px ){
+    .navbar-brand-box a span img{
+        width: 120px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .search-bar .input-group {
+        width: 175px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .dropdown :where(.template_file .tambah_data),
+    button.upload_file
+    {
+        width: 120px;
+    }
+}
+
+.popbox {
+    display: none;
+    position: absolute;
+    z-index: 99999;
+    width: 350px;
+    padding: 0;
+    margin: 0px;
+    border-radius: 5px;
+    /* -webkit-box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1); */
+    /* box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1); */
+}
+.popbox h2 {
+    background-color: #fff;
+    color: #495057;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    margin: -10px 0px 8px -10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px rgba(126, 123, 123, 0.3);
+}
+#nama_mahasiswa:hover{
+    text-decoration: underline;
+    color: #5b73e8;
+    font-weight: bolder;
+}
+#updateBtn, #forAdmittedBtn{
+    position: relative;
+    left: 20%;
+    /* padding: 0 0 0 50px; */
+} 
+#updateBtn {    
+    margin: 0 5% 0 0;
+}
+
+@media screen and (max-width:900px) {
+    #updateBtn, #forAdmittedBtn
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+.progress{
+    display: flexbox;
+    flex-wrap: nowrap;
+}
+
+button.stages{
+    position:sticky;
+    margin: 0 2px 4px;
+    padding: 12px 35px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.5s;
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 1px 1px 10px white;
+}
+button.stages:hover{
+    box-shadow: 50px 50px 50px black;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16.5px;
+    letter-spacing: 0.5px;
+}
+
+.big-dot{
+    width: 5px; /* Set the width to control the size of the dot */
+    height: 5px; /* Set the height to match the width for a perfect circle */
+    background-color: #000; /* Set the color of the dot */
+    border-radius: 50%; /* Make it a perfect circle by setting border-radius to 50% */
+}
